@@ -12,6 +12,11 @@
 		E191E41721CBF037001F9663 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191E41621CBF037001F9663 /* ViewController.swift */; };
 		E191E41A21CBF037001F9663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E191E41821CBF037001F9663 /* Main.storyboard */; };
 		E191E41D21CBF04A001F9663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E191E41B21CBF04A001F9663 /* LaunchScreen.storyboard */; };
+		E191E42821CBFAC5001F9663 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191E42721CBFAC5001F9663 /* State.swift */; };
+		E191E42A21CBFB5B001F9663 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191E42921CBFB5B001F9663 /* Event.swift */; };
+		E191E42C21CBFC0D001F9663 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191E42B21CBFC0D001F9663 /* StateMachine.swift */; };
+		E191E42E21CBFECB001F9663 /* StateChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191E42D21CBFECB001F9663 /* StateChange.swift */; };
+		E191E43121CC9FDC001F9663 /* Automation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191E43021CC9FDC001F9663 /* Automation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		E191E41921CBF037001F9663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E191E41C21CBF04A001F9663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E191E41E21CBF04A001F9663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E191E42721CBFAC5001F9663 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		E191E42921CBFB5B001F9663 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		E191E42B21CBFC0D001F9663 /* StateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		E191E42D21CBFECB001F9663 /* StateChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateChange.swift; sourceTree = "<group>"; };
+		E191E43021CC9FDC001F9663 /* Automation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation.swift; sourceTree = "<group>"; };
 		F91FD8DC020109EBF47509C0 /* Pods-Sample-StateMachine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-StateMachine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-StateMachine/Pods-Sample-StateMachine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +78,8 @@
 		E191E41321CBF037001F9663 /* Sample-StateMachine */ = {
 			isa = PBXGroup;
 			children = (
+				E191E42F21CC9DAF001F9663 /* Contracts */,
+				E191E42621CBFA58001F9663 /* Machines */,
 				E191E41421CBF037001F9663 /* AppDelegate.swift */,
 				E191E41621CBF037001F9663 /* ViewController.swift */,
 				E191E41821CBF037001F9663 /* Main.storyboard */,
@@ -75,6 +87,25 @@
 				E191E41E21CBF04A001F9663 /* Info.plist */,
 			);
 			path = "Sample-StateMachine";
+			sourceTree = "<group>";
+		};
+		E191E42621CBFA58001F9663 /* Machines */ = {
+			isa = PBXGroup;
+			children = (
+				E191E42B21CBFC0D001F9663 /* StateMachine.swift */,
+				E191E42D21CBFECB001F9663 /* StateChange.swift */,
+				E191E43021CC9FDC001F9663 /* Automation.swift */,
+			);
+			path = Machines;
+			sourceTree = "<group>";
+		};
+		E191E42F21CC9DAF001F9663 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				E191E42721CBFAC5001F9663 /* State.swift */,
+				E191E42921CBFB5B001F9663 /* Event.swift */,
+			);
+			path = Contracts;
 			sourceTree = "<group>";
 		};
 		F1155011BE0785A47770E69C /* Frameworks */ = {
@@ -209,7 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E191E41721CBF037001F9663 /* ViewController.swift in Sources */,
+				E191E42821CBFAC5001F9663 /* State.swift in Sources */,
+				E191E42A21CBFB5B001F9663 /* Event.swift in Sources */,
+				E191E43121CC9FDC001F9663 /* Automation.swift in Sources */,
+				E191E42C21CBFC0D001F9663 /* StateMachine.swift in Sources */,
 				E191E41521CBF037001F9663 /* AppDelegate.swift in Sources */,
+				E191E42E21CBFECB001F9663 /* StateChange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
